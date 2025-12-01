@@ -1,0 +1,19 @@
+[
+    {
+        "Nombre": "Francisco Jesús",
+        "Apellido1": "Torres",
+        "Apellido2": "Villarroya",
+        "Asignatura": "LMSGI"
+    },{
+        "Nombre": "Javier",
+        "Apellido1": "Seijas",
+        "Apellido2": "Bellido",
+        "Asignatura": "Programación"
+    },{
+        "Nombre": "Antonio Jesús",
+        "Apellido1": "Arroyo",
+        "Apellido2": "Rojas",
+        "Asignatura": "Digitalización"
+    }
+
+]

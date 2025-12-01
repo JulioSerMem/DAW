@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:borde-box;
+  font-family:sans-serif;
+}
+nav ul{
+  padding:10px;
+  list-style:none;
+  display:flex;
+}
+nav ul a{
+  flex:auto;
+  padding:10px;
+  margin-right:16px;
+  margin-left:16px;
+  background-color:rgb(255, 0, 221);
+  font-size:20px;
+  border:1px solid blue;
+  border-radius:16px;
+  text-align:center;
+  color:blue;
+  text-decoration:none;  
+}
+nav ul a:hover{
+  color:black;
+  border:1px solid black;
+  background-color:rgb(3, 233, 91);
+}
+.inicio{
+  background-color:rgb(255, 238, 0);
+  font-size:20px;
+  border:1px solid blue;
+  border-radius:16px;
+  text-align:center;
+  color:blue;
+  text-decoration:none;
+}
