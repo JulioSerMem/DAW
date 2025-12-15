@@ -1,0 +1,50 @@
+package Relacion_5;
+import java.util.*;
+public class Ahorcado_11 {
+	private static Scanner teclado = new Scanner(System.in);
+	public static void main(String[] args) {
+		int fallos=0;
+		String palabra=palabra();
+		ocultarPalabra();
+		String palabraAsteriscos=palabraAsteriscos(palabra);
+		while(fallos<=7) {
+		System.out.println(palabraAsteriscos);
+		char letra=letra();
+		palabraAsteriscos=buscarLetra(palabra, letra, palabraAsteriscos);
+		fallos++;
+		}
+	}
+	
+	private static String palabra() {
+		System.out.println("Ingrese una palabra secreta");
+		String palabraSecreta=teclado.nextLine().toLowerCase().trim();
+		return palabraSecreta;
+	}
+	
+	private static void ocultarPalabra() {
+		for(int i=0; i<15; i++) {
+			System.out.println();
+		}
+	}
+	
+	private static String palabraAsteriscos(String palabra) {
+		String palabraConAsteriscos="";
+		for(int i=0; i<palabra.length(); i++) {
+			palabraConAsteriscos+="_ ";
+		}return palabraConAsteriscos;
+	}
+	
+	private static char letra() {
+		System.out.println("Ingrese una letra");
+		char letra=teclado.next().charAt(0);
+		return letra;
+	}
+	
+	private static String buscarLetra(String palabra, char letra, String palabraAsteriscos) {
+		for(int i=0; i<palabra.length(); i++) {
+			if(palabra.charAt(i)==letra) {
+				palabraAsteriscos.replace(palabraAsteriscos.charAt(i), letra);
+			}
+		}return palabraAsteriscos;
+	}
+}

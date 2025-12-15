@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="true"/>
+		<list key="findhistory">
+			<item value="sc"/>
+			<item value="cadena"/>
+			<item value="num"/>
+			<item value="palo"/>
+			<item value="buf.limi"/>
+			<item value="buff.limit"/>
+		</list>
+		<list key="replacehistory">
+			<item value="teclado"/>
+			<item value="frase"/>
+		</list>
+	</section>
+</section>
