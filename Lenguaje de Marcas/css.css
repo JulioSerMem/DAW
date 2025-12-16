@@ -1,0 +1,18 @@
+head {
+        background-color: #ff6f61; /* Color de fondo rojo coral */
+        color: white; /* Texto en color blanco */
+        text-align: center; /* Centra el contenido del texto */
+        padding: 20px 0; /* Espaciado interno de 20px arriba y abajo */
+      }
+body {
+        font-family: Arial, sans-serif; /* Fuente principal */
+        background-color: #08ec67; /* Color de fondo verde agua */
+        margin: 0; /* Elimina márgenes predeterminados */
+        padding: 0; /* Elimina relleno predeterminado */
+      }
+      .tabla{
+        font-family: Arial, sans-serif; /* Fuente principal */
+        background-color: #ffffff; /* Color de fondo blanco */
+        margin: 0; /* Elimina márgenes predeterminados */
+        padding: 0; /* Elimina relleno predeterminado */
+      }

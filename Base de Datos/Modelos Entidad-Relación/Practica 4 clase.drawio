@@ -1,0 +1,137 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Página-1" id="7sxMXIZ3v7n85hgFe_a2">
+    <mxGraphModel dx="872" dy="4137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a-70uYYWzz6V8Fgo2ecu-3" value="&lt;span style=&quot;color: rgb(193, 198, 207); font-family: &amp;quot;Motiva Sans&amp;quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(41, 44, 52); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Se desea diseñar una base de datos que contenga la información relativa a todas las carreteras de España. Se pide realizar el diseño del modelo ER sabiendo que:&lt;/span&gt;&lt;br style=&quot;color: rgb(193, 198, 207); font-family: &amp;quot;Motiva Sans&amp;quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(41, 44, 52); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(193, 198, 207); font-family: &amp;quot;Motiva Sans&amp;quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(41, 44, 52); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Las carreteras se encuentran divididas en tramos.&lt;/span&gt;&lt;br style=&quot;color: rgb(193, 198, 207); font-family: &amp;quot;Motiva Sans&amp;quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(41, 44, 52); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(193, 198, 207); font-family: &amp;quot;Motiva Sans&amp;quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(41, 44, 52); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Un tramo, del que nos interesa su longitud, siempre pertenece a una única carretera y no puede cambiar de carretera.&lt;/span&gt;&lt;br style=&quot;color: rgb(193, 198, 207); font-family: &amp;quot;Motiva Sans&amp;quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(41, 44, 52); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(193, 198, 207); font-family: &amp;quot;Motiva Sans&amp;quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(41, 44, 52); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Un tramo puede pasar por varios términos municipales, siendo un dato de interés el km del tramo por el que entra en dicho término municipal y el km por el que sale.&lt;/span&gt;&lt;br style=&quot;color: rgb(193, 198, 207); font-family: &amp;quot;Motiva Sans&amp;quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(41, 44, 52); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(193, 198, 207); font-family: &amp;quot;Motiva Sans&amp;quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(41, 44, 52); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Existen una serie de áreas en las que se agrupan los tramos, cada uno de los cuales no puede pertenecer a más de un área.&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="-3460" width="560" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-6" target="PmGIyi6LAhDvskXd2yFa-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-6" target="PmGIyi6LAhDvskXd2yFa-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-6" value="Carretera" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="-3120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-7" target="PmGIyi6LAhDvskXd2yFa-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-7" value="Divide" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="-3130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-8" target="PmGIyi6LAhDvskXd2yFa-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-8" target="PmGIyi6LAhDvskXd2yFa-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-8" target="PmGIyi6LAhDvskXd2yFa-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-8" target="PmGIyi6LAhDvskXd2yFa-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="-3030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-8" value="Tramo" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-3120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-11" value="Longitud" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="-3220" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-13" value="Nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="530" y="-3220" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-16" value="(1,N)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175" y="-3152" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-17" value="(1,1)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="-3152" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-18" value="[N,1]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="305" y="-3160" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-20" target="PmGIyi6LAhDvskXd2yFa-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-20" value="Área" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="820" y="-3120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-22" target="PmGIyi6LAhDvskXd2yFa-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-22" value="Pertenece" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="630" y="-3130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-26" value="(1,1)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="545" y="-3142" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-27" value="(1,N)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="795" y="-3152" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-28" value="[1,N]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="665" y="-3162" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-34" target="PmGIyi6LAhDvskXd2yFa-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-34" value="Municipio" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-2920" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-49" target="PmGIyi6LAhDvskXd2yFa-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="-2970" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-38" value="(1,N)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="525" y="-2952" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-39" value="(1,N)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="505" y="-3082" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-40" value="[N,M]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="-3015" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-43" value="Nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-3230" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-45" value="Nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="595" y="-2920" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-47" value="Nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="820" y="-3220" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-49" target="PmGIyi6LAhDvskXd2yFa-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="-3032" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-49" target="PmGIyi6LAhDvskXd2yFa-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="-2970" />
+              <mxPoint x="415" y="-2972" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-49" value="Pasa" style="shape=associativeEntity;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="-3030" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-50" value="km_entrada" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="290" y="-3052" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-51" value="km_salida" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="290" y="-2992" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PmGIyi6LAhDvskXd2yFa-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PmGIyi6LAhDvskXd2yFa-51" target="PmGIyi6LAhDvskXd2yFa-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
