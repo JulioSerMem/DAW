@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrusel Infinito</title>
+
+<style>
+  body {
+    background-color: #f5f5f5;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .carousel-container {
+    width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  }
+
+  /* BOTONERA VERDE AGUA */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #00c8b3;
+    border-radius: 50px;
+  }
+
+  .btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  .btn:hover { background: rgba(0,0,0,0.25); }
+
+  .dynamic-group {
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  .dynamic-group .btn {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 14px;
+    display: none;
+  }
+
+  /* CARRUSEL */
+  .scroll-snap-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-bottom: 20px;
+  }
+  .scroll-snap-wrapper::-webkit-scrollbar { display: none; }
+
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    text-align: center;
+  }
+  .slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.2));
+  }
+
+  .info {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* BOTONES PREV (infinito) */
+  body:has(#n1:target) .prev.to-n10,
+  body:has(#n2:target) .prev.to-n1,
+  body:has(#n3:target) .prev.to-n2,
+  body:has(#n4:target) .prev.to-n3,
+  body:has(#n5:target) .prev.to-n4,
+  body:has(#n6:target) .prev.to-n5,
+  body:has(#n7:target) .prev.to-n6,
+  body:has(#n8:target) .prev.to-n7,
+  body:has(#n9:target) .prev.to-n8,
+  body:has(#n10:target) .prev.to-n9 {
+    display: block !important;
+  }
+
+  /* BOTONES NEXT (infinito) */
+  body:has(#n1:target) .next.to-n2,
+  body:has(#n2:target) .next.to-n3,
+  body:has(#n3:target) .next.to-n4,
+  body:has(#n4:target) .next.to-n5,
+  body:has(#n5:target) .next.to-n6,
+  body:has(#n6:target) .next.to-n7,
+  body:has(#n7:target) .next.to-n8,
+  body:has(#n8:target) .next.to-n9,
+  body:has(#n9:target) .next.to-n10,
+  body:has(#n10:target) .next.to-n1 {
+    display: block !important;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="carousel-container">
+
+  <div class="controls">
+    <a href="#n1" class="btn side">Inicio</a>
+
+    <!-- FLECHAS IZQUIERDA -->
+    <div class="dynamic-group">
+      <a href="#n10" class="btn prev to-n10">◀</a>
+      <a href="#n1" class="btn prev to-n1">◀</a>
+      <a href="#n2" class="btn prev to-n2">◀</a>
+      <a href="#n3" class="btn prev to-n3">◀</a>
+      <a href="#n4" class="btn prev to-n4">◀</a>
+      <a href="#n5" class="btn prev to-n5">◀</a>
+      <a href="#n6" class="btn prev to-n6">◀</a>
+      <a href="#n7" class="btn prev to-n7">◀</a>
+      <a href="#n8" class="btn prev to-n8">◀</a>
+      <a href="#n9" class="btn prev to-n9">◀</a>
+    </div>
+
+    <!-- FLECHAS DERECHA -->
+    <div class="dynamic-group">
+      <a href="#n2" class="btn next to-n2">▶</a>
+      <a href="#n3" class="btn next to-n3">▶</a>
+      <a href="#n4" class="btn next to-n4">▶</a>
+      <a href="#n5" class="btn next to-n5">▶</a>
+      <a href="#n6" class="btn next to-n6">▶</a>
+      <a href="#n7" class="btn next to-n7">▶</a>
+      <a href="#n8" class="btn next to-n8">▶</a>
+      <a href="#n9" class="btn next to-n9">▶</a>
+      <a href="#n10" class="btn next to-n10">▶</a>
+      <a href="#n1" class="btn next to-n1">▶</a>
+    </div>
+
+    <a href="#n10" class="btn side">Final</a>
+  </div>
+
+  <div class="scroll-snap-wrapper">
+
+    <div id="n1" class="slide">
+      <img src="https://picsum.photos/id/1011/600/350" alt="1">
+      <div class="info">1</div>
+    </div>
+
+    <div id="n2" class="slide">
+      <img src="https://picsum.photos/id/1025/600/350" alt="2">
+      <div class="info">2</div>
+    </div>
+
+    <div id="n3" class="slide">
+      <img src="https://picsum.photos/id/1035/600/350" alt="3">
+      <div class="info">3</div>
+    </div>
+
+    <div id="n4" class="slide">
+      <img src="https://picsum.photos/id/1044/600/350" alt="4">
+      <div class="info">4</div>
+    </div>
+
+    <div id="n5" class="slide">
+      <img src="https://picsum.photos/id/1050/600/350" alt="5">
+      <div class="info">5</div>
+    </div>
+
+    <div id="n6" class="slide">
+      <img src="https://picsum.photos/id/1062/600/350" alt="6">
+      <div class="info">6</div>
+    </div>
+
+    <div id="n7" class="slide">
+      <img src="https://picsum.photos/id/1074/600/350" alt="7">
+      <div class="info">7</div>
+    </div>
+
+    <div id="n8" class="slide">
+      <img src="https://picsum.photos/id/1084/600/350" alt="8">
+      <div class="info">8</div>
+    </div>
+
+    <div id="n9" class="slide">
+      <img src="https://picsum.photos/id/109/600/350" alt="9">
+      <div class="info">9</div>
+    </div>
+
+    <div id="n10" class="slide">
+      <img src="https://picsum.photos/id/110/600/350" alt="10">
+      <div class="info">10</div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
