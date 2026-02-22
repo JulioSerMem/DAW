@@ -1,6 +1,6 @@
 package Ejercicio_1_Arrays;
 import java.util.*;
-public class ContarNumerosPositivos {
+public class ContarNumerosPositivos_3 {
 	public static void main(String[] args) {
 		int numeros[] = {4, -3, 7, 0, -2, 8};
 		positivos(numeros);
