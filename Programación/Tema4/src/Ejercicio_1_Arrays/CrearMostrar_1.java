@@ -1,6 +1,6 @@
 package Ejercicio_1_Arrays;
 import java.util.*;
-public class Crear_Mostrar {
+public class CrearMostrar_1 {
 	public static void main(String[] args) {
 		int vectorNums[] = {1, 2, 3, 4, 5};
 		bucleFor(vectorNums);

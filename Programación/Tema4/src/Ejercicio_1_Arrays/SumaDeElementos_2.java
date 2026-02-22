@@ -1,6 +1,6 @@
 package Ejercicio_1_Arrays;
 import java.util.*;
-public class SumaDeElementos {
+public class SumaDeElementos_2 {
 	public static void main(String[] args) {
 		int vectorNums[] = {1, 2, 3, 4, 5, 6};
 		sumaTotal(vectorNums);
