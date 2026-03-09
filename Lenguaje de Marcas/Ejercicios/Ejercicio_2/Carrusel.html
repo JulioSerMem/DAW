@@ -8,7 +8,7 @@
 
 <style>
   body {
-    background-color: #f5f5f5;
+    background-color: #00c8b3;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -117,6 +117,24 @@
   body:has(#n10:target) .next.to-n1 {
     display: block !important;
   }
+
+  /* VERDE → AZUL PROGRESIVO SEGÚN EL SLIDE ACTIVO */
+  body:has(#n1:target) { background-color: #00c8b3; }
+  body:has(#n2:target) { background-color: #00b7c8; }
+  body:has(#n3:target) { background-color: #00a3d8; }
+  body:has(#n4:target) { background-color: #008ee5; }
+  body:has(#n5:target) { background-color: #0077ee; }
+  body:has(#n6:target) { background-color: #0060f5; }
+  body:has(#n7:target) { background-color: #0048fa; }
+  body:has(#n8:target) { background-color: #0030fd; }
+  body:has(#n9:target) { background-color: #0018ff; }
+  body:has(#n10:target) { background-color: #0000ff; }
+
+  /* Transición suave */
+  body {
+    transition: background-color 0.6s ease;
+  }
+
 </style>
 </head>
 
@@ -161,52 +179,52 @@
   <div class="scroll-snap-wrapper">
 
     <div id="n1" class="slide">
-      <img src="https://picsum.photos/id/1011/600/350" alt="1">
+      <img src="https://picsum.photos/id/1011/600/350" alt="Mujer en una balsa en un lago rodeado de arboles">
       <div class="info">1</div>
     </div>
 
     <div id="n2" class="slide">
-      <img src="https://picsum.photos/id/1025/600/350" alt="2">
+      <img src="https://picsum.photos/id/1025/600/350" alt="Perro sentado en la hierba mirando a la cámara">
       <div class="info">2</div>
     </div>
 
     <div id="n3" class="slide">
-      <img src="https://picsum.photos/id/1035/600/350" alt="3">
+      <img src="https://picsum.photos/id/1035/600/350" alt="Humbre en cascadas con arcoiris">
       <div class="info">3</div>
     </div>
 
     <div id="n4" class="slide">
-      <img src="https://picsum.photos/id/1044/600/350" alt="4">
+      <img src="https://picsum.photos/id/1044/600/350" alt="Hombre en un gran rio">
       <div class="info">4</div>
     </div>
 
     <div id="n5" class="slide">
-      <img src="https://picsum.photos/id/1050/600/350" alt="5">
+      <img src="https://picsum.photos/id/1050/600/350" alt="Acantilados junto al mar">
       <div class="info">5</div>
     </div>
 
     <div id="n6" class="slide">
-      <img src="https://picsum.photos/id/1062/600/350" alt="6">
+      <img src="https://picsum.photos/id/1062/600/350" alt="Perro con una manta en la cama">
       <div class="info">6</div>
     </div>
 
     <div id="n7" class="slide">
-      <img src="https://picsum.photos/id/1074/600/350" alt="7">
+      <img src="https://picsum.photos/id/1074/600/350" alt="Felino">
       <div class="info">7</div>
     </div>
 
     <div id="n8" class="slide">
-      <img src="https://picsum.photos/id/1084/600/350" alt="8">
+      <img src="https://picsum.photos/id/1084/600/350" alt="Morsas en la playa">
       <div class="info">8</div>
     </div>
 
     <div id="n9" class="slide">
-      <img src="https://picsum.photos/id/109/600/350" alt="9">
+      <img src="https://picsum.photos/id/109/600/350" alt="Campo soleado con un árbol">
       <div class="info">9</div>
     </div>
 
     <div id="n10" class="slide">
-      <img src="https://picsum.photos/id/110/600/350" alt="10">
+      <img src="https://picsum.photos/id/110/600/350" alt="Atardecer en el campo">
       <div class="info">10</div>
     </div>
 
