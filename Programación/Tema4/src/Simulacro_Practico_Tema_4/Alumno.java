@@ -1,6 +1,6 @@
 package Simulacro_Practico_Tema_4;
 import java.util.*;
-public class Alumno {
+public class Alumno implements Comparable<Alumno> {
 	private String nombre;
 	private double nota;
 	
@@ -25,5 +25,11 @@ public class Alumno {
 		return "Alumno: " + nombre + " nota: " + nota;
 	}
 	
-	
+	@Override
+	public int compareTo(Alumno a) {
+		if (this.nota < a.getNota())
+			return -1;
+		if (this.nota > a.getNota())
+			return 1;
+		return 0; }
 }
