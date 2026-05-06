@@ -3,6 +3,7 @@
   padding:0;
   box-sizing:borde-box;
   font-family:sans-serif;
+  text-align: center;
 }
 nav ul{
   padding:10px;
@@ -29,6 +30,40 @@ nav ul a:hover{
 }
 .inicio{
   background-color:rgb(255, 238, 0);
+  font-size:20px;
+  border:1px solid blue;
+  border-radius:16px;
+  text-align:center;
+  color:blue;
+  text-decoration:none;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    background-color: #f9f9f9;
+    min-width: 160px;
+    margin-right:16px;
+    margin-left:16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 12px;
+    position: absolute;
+    display: none;
+    right:0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+button {
+  padding:10px;
+  margin-right:16px;
+  margin-left:16px;
+  background-color:rgb(255, 0, 221);
   font-size:20px;
   border:1px solid blue;
   border-radius:16px;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropdown {
+    display: inline-block;
+    position: relative;
+    justify-content: right;
+}
+
+.dropdown-content {
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 12px;
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+    <button>Menu</button>
+    <button>Menu1</button>
+    <button>Menu2</button>
+    
+    <div class="dropdown-content">
+        <a href="#">Julio</a><br>
+        <a href="#">Serrano</a><br>
+        <a href="#">Membrive</a>
+    </div>
+</div>
+
+</body>
+</html>
