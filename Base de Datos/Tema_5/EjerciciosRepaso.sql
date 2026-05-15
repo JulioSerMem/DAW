@@ -70,6 +70,33 @@ suma_total_pedidos
 suma_total_pagos
 pendiente_de_pago
 */
+DELIMITER $$
+CREATE OR REPLACE PROCEDURE calcular_pagos_pendientes()
+BEGIN
+    DROP TABLE IF EXISTS clientes_con_pagos_pendientes;
+    CREATE TABLE clientes_con_pagos_pendientes (
+        codigo_cliente INT,
+        nombre_cliente VARCHAR(50),
+        suma_total_pedidos DECIMAL(10,2),
+        suma_total_pagos DECIMAL(10,2),
+        pendiente_de_pago DECIMAL(10,2)
+    );
+    INSERT INTO clientes_con_pagos_pendientes (
+        codigo_cliente,
+        nombre_cliente,
+        suma_total_pedidos,
+        suma_total_pagos,
+        pendiente_de_pago
+    )
+    select codigo_cliente, nombre_cliente, calcular_suma_pagos_cliente(codigo_cliente) as pagado,
+    calcular_suma_pedidos_cliente(codigo_cliente) as pedido,
+    calcular_suma_pedidos_cliente(codigo_cliente) - calcular_suma_pagos_cliente(codigo_cliente) as pendiente
+    from cliente
+    where calcular_suma_pedidos_cliente(codigo_cliente) > calcular_suma_pagos_cliente(codigo_cliente)
+END $$
+DELIMITER ;
+
+CALL calcular_pagos_pendientes();
 
 -- 2. Crea una tabla que se llame notificaciones que tenga las siguientes columnas:
 /*
@@ -78,6 +105,12 @@ fecha_hora: marca de tiempo con el instante del pago (fecha y hora)
 total: el valor del pago (real)
 codigo_cliente: código del cliente que realiza el pago (entero)
 */
+CREATE TABLE notificaciones (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    fecha_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    total DECIMAL(10,2),
+    codigo_cliente INT
+);
 
 -- 3. Escriba un trigger que nos permita llevar un control de los pagos que van realizando los clientes. Los detalles de implementación son los siguientes:
 /*
@@ -86,3 +119,12 @@ Se ejecuta sobre la tabla pago.
 Se ejecuta después de hacer la inserción de un pago.
 Cada vez que un cliente realice un pago (es decir, se hace una inserción en la tabla pago), el trigger deberá insertar un nuevo registro en una tabla llamada notificaciones.
 */
+DELIMITER $$
+CREATE OR REPLACE TRIGGER trigger_notificar_pago
+AFTER INSERT ON pago
+FOR EACH ROW
+BEGIN
+    INSERT INTO notificaciones (total, codigo_cliente)
+    VALUES (NEW.total, NEW.codigo_cliente);
+END $$
+DELIMITER ;
