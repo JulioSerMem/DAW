@@ -346,6 +346,7 @@ FROM Libros L
 INNER JOIN es_escrito E ON L.isbn = E.isbn
 INNER JOIN Autor A ON E.id_autor = A.id_autor
 INNER JOIN es_editado_por EP ON L.isbn = EP.isbn
+<<<<<<< HEAD
 INNER JOIN Editorial ED ON EP.id_editorial = ED.id_editorial;
 
 
@@ -375,3 +376,6 @@ CREATE TABLE IF NOT EXISTS dashboard_estadisticas (
     id INT AUTO_INCREMENT PRIMARY KEY, indicador VARCHAR(150) NOT NULL,
     valor_numerico INT DEFAULT 0, valor_texto VARCHAR(200) DEFAULT NULL,
     fecha_actualizacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);
+=======
+INNER JOIN Editorial ED ON EP.id_editorial = ED.id_editorial;
+>>>>>>> origin/continuar
