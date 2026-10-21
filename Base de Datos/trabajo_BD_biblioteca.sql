@@ -347,3 +347,31 @@ INNER JOIN es_escrito E ON L.isbn = E.isbn
 INNER JOIN Autor A ON E.id_autor = A.id_autor
 INNER JOIN es_editado_por EP ON L.isbn = EP.isbn
 INNER JOIN Editorial ED ON EP.id_editorial = ED.id_editorial;
+
+
+
+-- TABLAS AUXILIARES PARA CURSORES
+CREATE TABLE IF NOT EXISTS log_prestamos_activos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_prestamo INT,
+    nombre_usuario VARCHAR(100),
+    titulo_libro VARCHAR(200),
+    fecha_prestamo DATE,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS log_mantenimiento (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_ejemplar INT,
+    copia_ejemplar VARCHAR(50),
+    isbn VARCHAR(20),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+-- DASHBOARD
+CREATE TABLE IF NOT EXISTS dashboard_estadisticas (
+    id INT AUTO_INCREMENT PRIMARY KEY, indicador VARCHAR(150) NOT NULL,
+    valor_numerico INT DEFAULT 0, valor_texto VARCHAR(200) DEFAULT NULL,
+    fecha_actualizacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre y apellidos: </label>
+        <input id="nombre" type="text"><br>
+        <label for="sexo">Sexo: </label>
+        <select id="sexo">
+            <!--Etiqueta option-->
+            <option value="value1">Hombre</option> 
+            <option value="value2" selected>Mujer</option>
+        </select><br><br>
+        <label>Edad: </label>
+        <input type="checkbox" value="20-39"> 20-39
+        <input type="checkbox" value="40-59"> 40-59
+        <input type="checkbox" value="60-79"> 60-79<br><br>
+        <label for="email">Email: </label>
+        <input id="email" type="email"><br><br>
+        <label for="estudios">Estudios: </label>
+        <select id="estudios">
+            <optgroup label="Estudios Universitarios">
+                <option>Doctorado</option>
+                <option>Máster</option>
+                <option>Grado</option>
+            </optgroup>
+            <optgroup label="Ciclo Formativo">
+                <option>Grado Superior</option>
+                <option>Grado Medio</option>
+            </optgroup>
+        </select><br><br>
+        <label for="navegador">Elige tu navegador favorito: </label>
+        <input id="navegador" list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+        </datalist><br><br>
+        <label for="mensaje">Escribe tu mensaje: </label>
+        <textarea rows="10" cols="50" placeholder="Mensaje" id="mensaje"></textarea>
+    </fieldset>  
+    <input type="submit" value="Enviar">
+</form>
+<br>
+<hr>
+<br>
+<form>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="Asignatura">Asignatura:</label>
+        <input type="text" id="Asignatura" name="Asignatura"><br><br>
+        <label for="Horario">Horario:</label>
+            <select name="Horario" id="Horario">
+                <optgroup label="Mañana">
+                    <option value="PHP"">PHP</option>
+                    <option value="SQL">SQL</option>
+                </optgroup>
+                <optgroup label="Tarde">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                </optgroup>
+            </select><br><br>
+        <label for="Curso">Curso:</label>
+        <input type="checkbox" id="Curso" name="Curso" value="1º">1ºDAW
+        <input type="checkbox" id="Curso" name="Curso" value="2º">2ºDAW<br><br>
+    </fieldset>
+</form>
+
+<br>
+<hr>
+<br>
+
+<form>
+    <input list="P1">
+    <datalist id="P1">
+        <option value="PHP" selected>1</option>
+        <option value="SQL">2</option>
+        <option value="HTML">3</option>
+        <option value="CSS">4</option>
+    </datalist>
+
+    <br>
+    <hr>
+    <br>
+
+    <label>Opt1</label>
+    <input type="radio" name="Opt1" value="1" checked>
+    <br>
+    <label>Opt2</label>
+    <input type="radio" name="Opt1" value="2" checked>
+
+    <br>
+    <hr>
+    <br>
+
+    <input type="submit" value="Entregar">
+</form>
+
+<br>
+<hr>
+<br>
+
+<form>
+    <fieldset>
+        <legend>Examen</legend>
+        <input type="radio" name="A" value="1" checked>
+        <label for="A"><b>A. </b>Jose es tonto</label>
+        <br>
+        <input type="radio" name="B" value="2" checked>
+        <label for="B"><b>B. </b>Raul es tonto</label>
+    </fieldset>
+</form>
+
+<br>
+<hr>
+<br>
+
+    <label for="cantidad">Introduce 2 dígitos:</label>
+    <input type="number" name="cantidad" min="1" max="99" step="1">
+
+<br>
+<hr>
+<br>
+
+
+    <textarea rows="20" cols="50" placeholder="Mensaje"></textarea>
+    <input type="text" pattern="*.txt">
+</body>
+</html>

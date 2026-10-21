@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Haz clic en la imagen para pasar al siguiente fotograma</h2>
+
+    <script>
+        // Array con las rutas/enlaces a las 4 imágenes
+        var fotos = [
+            'https://picsum.photos/id/1015/600/400', // Paisaje 1
+            'https://picsum.photos/id/1018/600/400', // Paisaje 2
+            'https://picsum.photos/id/1025/600/400', // Paisaje 3
+            'https://picsum.photos/id/1036/600/400'  // Paisaje 4
+        ];
+        // Contador inicial
+        var i = 0;
+    </script>
+
+    <!--Al hacer clic:
+    1. Incrementamos el contador: i = (i + 1) % fotos.length
+        El operador módulo (%) hace que al llegar al final vuelva a 0 (0, 1, 2, 3 -> 0, 1, 2, 3...)
+    2. Asignamos la nueva imagen a this.src-->
+    <img id="fotograma" 
+        src="https://picsum.photos/id/1015/600/400" 
+        width="600" 
+        height="400" 
+        alt="Fotograma de paisaje"
+        style="cursor: pointer;"
+        onclick="i = (i + 1) % fotos.length; this.src = fotos[i];">
+</body>
+</html>

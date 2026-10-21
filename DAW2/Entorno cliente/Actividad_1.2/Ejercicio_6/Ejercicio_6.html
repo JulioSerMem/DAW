@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="prueba2">Modificando el código HTML</h1>
+    <p id="prueba">Modificando el contenido.</p>
+    <!-- Al hacer clic, document.getElementById localiza el nodo y cambia su texto interno -->
+    <button type="button" onclick="alert('CAMBIANDO el contenido!');document.getElementById('prueba').innerHTML = 'CAMBIANDO el contenido!';console.log('Se ha hecho clic en el botón correctamente.');">¡Dale!</button>
+    <button type="button" onclick="alert('Contenido modificado');document.getElementById('prueba2').innerHTML = 'Contenido modificado';console.log('Se ha hecho clic en el botón correctamente.');">Cambialo</button>
+    <br>
+    <p id="saludo">Hola</p>
+    <button type="button" onclick="document.write('<h1>Hola</h1>');console.log('Hola');">Español</button>
+    <button type="button" onclick="document.write('<h1>Hello</h1>');console.log('Hello');">Inglés</button>
+    <button type="button" onclick="document.write('<h1>привет</h1>');console.log('привет');">Ruso</button>
+</body>
+</html>

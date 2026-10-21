@@ -1,0 +1,62 @@
+<!--•	Ejercicio 8: Desarrollar un test interactivo de siete preguntas con botones «Verdadero» y «Falso». Cuando el usuario hace clic, el script evalúa el acierto y modifica la propiedad de estilo .style.color = "green" (acierto) o .style.color = "red" (error).-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Test Interactivo</h1>
+
+    <!-- Pregunta 1 (Respuesta correcta: Verdadero) -->
+    <div>
+        <p id="p1">1. El agua hierve a 100 °C a nivel del mar.</p>
+        <button type="button" onclick="document.getElementById('p1').style.color = 'green';">Verdadero</button>
+        <button type="button" onclick="document.getElementById('p1').style.color = 'red';">Falso</button>
+    </div>
+
+    <!-- Pregunta 2 (Respuesta correcta: Falso) -->
+    <div>
+        <p id="p2">2. El Sol gira alrededor de la Tierra.</p>
+        <button type="button" onclick="document.getElementById('p2').style.color = 'red';">Verdadero</button>
+        <button type="button" onclick="document.getElementById('p2').style.color = 'green';">Falso</button>
+    </div>
+
+    <!-- Pregunta 3 (Respuesta correcta: Verdadero) -->
+    <div>
+        <p id="p3">3. HTML es un lenguaje de marcado.</p>
+        <button type="button" onclick="document.getElementById('p3').style.color = 'green';">Verdadero</button>
+        <button type="button" onclick="document.getElementById('p3').style.color = 'red';">Falso</button>
+    </div>
+
+    <!-- Pregunta 4 (Respuesta correcta: Falso) -->
+    <div>
+        <p id="p4">4. Los peces son mamíferos.</p>
+        <button type="button" onclick="document.getElementById('p4').style.color = 'red';">Verdadero</button>
+        <button type="button" onclick="document.getElementById('p4').style.color = 'green';">Falso</button>
+    </div>
+
+    <!-- Pregunta 5 (Respuesta correcta: Verdadero) -->
+    <div>
+        <p id="p5">5. España está en el continente europeo.</p>
+        <button type="button" onclick="document.getElementById('p5').style.color = 'green';">Verdadero</button>
+        <button type="button" onclick="document.getElementById('p5').style.color = 'red';">Falso</button>
+    </div>
+
+    <!-- Pregunta 6 (Respuesta correcta: Falso) -->
+    <div>
+        <p id="p6">6. El color azul se obtiene mezclando amarillo y rojo.</p>
+        <button type="button" onclick="document.getElementById('p6').style.color = 'red';">Verdadero</button>
+        <button type="button" onclick="document.getElementById('p6').style.color = 'green';">Falso</button>
+    </div>
+
+    <!-- Pregunta 7 (Respuesta correcta: Verdadero) -->
+    <div>
+        <p id="p7">7. JavaScript permite añadir interactividad a las páginas web.</p>
+        <button type="button" onclick="document.getElementById('p7').style.color = 'green';">Verdadero</button>
+        <button type="button" onclick="document.getElementById('p7').style.color = 'red';">Falso</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="mensaje">Estado del sistema...</p>
+
+    <button type="button" onclick="console.log(new Date())">1. Emitir Traza</button>
+    <button type="button"
+    onclick="document.getElementById('mensaje').innerHTML = 'Sistema Activo';
+    document.getElementById('mensaje').style.backgroundColor = 'green';">2. Cambiar Estilo</button>
+    <button type="button" onclick="alert('El proceso ha concluido')">3. Mostrar Alerta</button>
+
+</body>
+</html>

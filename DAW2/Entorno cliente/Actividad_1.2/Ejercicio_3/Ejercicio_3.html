@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1 id="prueba2">Modificando el código HTML</h1>
+    <p id="prueba">Modificando el contenido.</p>
+    <p id="saludo">Hola</p>
+    <!-- Al hacer clic, document.getElementById localiza el nodo y cambia su texto interno -->
+    <button type="button" onclick="alert('CAMBIANDO el contenido!');document.getElementById('prueba').innerHTML = 'CAMBIANDO el contenido!';console.log('Se ha hecho clic en el botón correctamente.');">¡Dale!</button>
+    <button type="button" onclick="alert('Contenido modificado');document.getElementById('prueba2').innerHTML = 'Contenido modificado';console.log('Se ha hecho clic en el botón correctamente.');">Cambialo</button>
+</body>
+</html>

@@ -1,0 +1,22 @@
+use cine_db
+
+db.peliculas.insertMany([ 
+    { "titulo": "Inception", "director": "Christopher Nolan", "año": 2010, "genero": ["Sci-Fi", "Action"], "puntuacion": 8.8, "oscar": true },
+    { "titulo": "The Matrix", "director": "Lana Wachowski", "año": 1999, "genero": ["Sci-Fi"], "puntuacion": 8.7, "oscar": true },
+    { "titulo": "Interstellar", "director": "Christopher Nolan", "año": 2014, "genero": ["Sci-Fi", "Drama"], "puntuacion": 8.6, "oscar": true },
+    { "titulo": "Pulp Fiction", "director": "Quentin Tarantino", "año": 1994, "genero": ["Crime", "Drama"], "puntuacion": 8.9, "oscar": true },
+    { "titulo": "Avatar: The Way of Water", "director": "James Cameron", "año": 2022, "genero": ["Action", "Sci-Fi"], "puntuacion": 7.6, "oscar": false } 
+])
+
+db.peliculas.find(
+    { año: { $gte: 2010 } }
+)
+
+db.peliculas.find(
+    { genero: "Drama" }
+)
+
+db.peliculas.find({ 
+    genero: "Sci-Fi", 
+    puntuacion: { $gt: 8.6 } 
+})
