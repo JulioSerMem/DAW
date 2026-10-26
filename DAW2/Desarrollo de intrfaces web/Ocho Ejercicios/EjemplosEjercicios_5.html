@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<title>Vídeo accesible</title>
+<style>
+    body{font-family:system-ui;margin:2rem;text-align:center}
+    video{max-width:100%;border:2px solid #ccc;border-radius:16px}
+</style>
+</head>
+<body>
+    <h1>Presentación del proyecto</h1>
+
+    <video controls poster="poster.jpg">
+        <!-- Usa tu propio vídeo -->
+        <source src="proyecto.mp4" type="video/mp4">
+        <track src="sub-es.vtt" kind="subtitles" srclang="es" label="Español" default>
+        <track src="sub-en.vtt" kind="subtitles" srclang="en" label="English">
+        Tu navegador no soporta vídeo HTML5.
+    </video>
+</body>
+</html>

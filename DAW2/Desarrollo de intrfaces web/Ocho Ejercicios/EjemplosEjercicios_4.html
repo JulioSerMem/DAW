@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<title>Galería de fotos</title>
+<style>
+  body{font-family:system-ui;margin:1rem}
+  .grid{
+    display:grid;
+    gap: 300px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  }
+  figure{margin:0;border:1px solid #ddd;padding:.5rem;border-radius:4px}
+  figcaption{text-align:center;margin-top:.4rem;font-size:.9rem;color:#555}
+</style>
+</head>
+<body>
+  <h1>Galería de primavera</h1>
+  <section class="grid">
+    <!-- Reemplaza las URLs si quieres imágenes propias -->
+    <figure>
+      <img src="https://picsum.photos/seed/1/600/400" alt="Paisaje 1" width="100%" />
+      <figcaption>Río al atardecer</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/seed/2/600/400" alt="Paisaje 2" />
+      <figcaption>Campo en flor</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/seed/3/600/400" alt="Paisaje 3" />
+      <figcaption>Nubes primaverales</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/seed/4/600/400" alt="Paisaje 4" />
+      <figcaption>Lago cristalino</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/seed/5/600/400" alt="Paisaje 5" />
+      <figcaption>Sendero verde</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/seed/6/600/400" alt="Paisaje 6" />
+      <figcaption>Flores silvestres</figcaption>
+    </figure>
+  </section>
+</body>
+</html>
